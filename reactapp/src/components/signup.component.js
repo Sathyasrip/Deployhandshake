@@ -89,7 +89,7 @@ export default class SignUp extends Component {
         // //set the with credentials to true
         // axios.defaults.withCredentials = true;
         // //make a post request with the user data
-         axios.post('http://localhost:5000/register',data)
+         axios.post('http://ec2-54-183-214-24.us-west-1.compute.amazonaws.com:5000/register',data)
             .then(response => {
                 console.log("Status Code Create : ",response.data);
                 if(response.data.code === 200){

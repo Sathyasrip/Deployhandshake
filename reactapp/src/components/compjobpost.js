@@ -27,7 +27,7 @@ export default class Compjobpost extends Component {
     }
     componentDidMount(){
         const data={comp_id:1};
-         axios.get('http://localhost:5000/compjobs',data)
+         axios.get('http://ec2-54-183-214-24.us-west-1.compute.amazonaws.com:5000/compjobs',data)
                  .then((response) => {
                  //update the state with the response data
                  this.setState({
@@ -63,7 +63,7 @@ export default class Compjobpost extends Component {
         // //set the with credentials to true
         // axios.defaults.withCredentials = true;
         // //make a post request with the user data
-         axios.post('http://localhost:5000/compjobpost',data)
+         axios.post('http://ec2-54-183-214-24.us-west-1.compute.amazonaws.com:5000/compjobpost',data)
             .then(response => {
                 //console.log("Status Code Create : ",response.data);
                 console.log("response : ",response);

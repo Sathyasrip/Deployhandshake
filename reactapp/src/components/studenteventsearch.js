@@ -19,7 +19,7 @@ export default class Studenteventssearch extends Component {
         
         e.preventDefault();
         const data={comp_id:1};
-        axios.get('http://localhost:5000/compevents',data)
+        axios.get('http://ec2-54-183-214-24.us-west-1.compute.amazonaws.com:5000/compevents',data)
                 .then((response) => {
                 //update the state with the response data
                 this.setState({

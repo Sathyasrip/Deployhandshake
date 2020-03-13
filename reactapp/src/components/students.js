@@ -15,7 +15,7 @@ class Students extends Component {
     //get the books data from backend  
     componentDidMount(){
        const data={name:'s'};
-        axios.get('http://localhost:5000/students')
+        axios.get('http://ec2-54-183-214-24.us-west-1.compute.amazonaws.com:5000/students')
                 .then((response) => {
                 //update the state with the response data
                 this.setState({

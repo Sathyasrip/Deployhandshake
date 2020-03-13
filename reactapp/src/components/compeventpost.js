@@ -31,7 +31,7 @@ export default class Compeventpost extends Component {
     }
     componentDidMount(){
         //const data={comp_id:1};
-         axios.get('http://localhost:5000/compevents')
+         axios.get('http://ec2-54-183-214-24.us-west-1.compute.amazonaws.com:5000/compevents')
                  .then((response) => {
                  //update the state with the response data
                  this.setState({
@@ -66,7 +66,7 @@ export default class Compeventpost extends Component {
         // //set the with credentials to true
         // axios.defaults.withCredentials = true;
         // //make a post request with the user data
-         axios.post('http://localhost:5000/compeventpost',data)
+         axios.post('http://ec2-54-183-214-24.us-west-1.compute.amazonaws.com:5000/compeventpost',data)
             .then(response => {
                 //console.log("Status Code Create : ",response.data);
                 console.log("response : ",response);

@@ -54,7 +54,7 @@ export default class Profileprac extends Component {
             
 
         }
-        axios.post('http://localhost:5000/updatedetails', data)
+        axios.post('http://ec2-54-183-214-24.us-west-1.compute.amazonaws.com:5000/updatedetails', data)
             .then((response) => {
                 console.log(response.data);
 
@@ -77,7 +77,7 @@ export default class Profileprac extends Component {
             
 
         }
-        axios.post('http://localhost:5000/updatedetails', data)
+        axios.post('http://ec2-54-183-214-24.us-west-1.compute.amazonaws.com:5000/updatedetails', data)
             .then((response) => {
                 console.log(response.data);
 
@@ -100,7 +100,7 @@ export default class Profileprac extends Component {
             
 
         }
-        axios.post('http://localhost:5000/updatedetails', data)
+        axios.post('http://ec2-54-183-214-24.us-west-1.compute.amazonaws.com:5000/updatedetails', data)
             .then((response) => {
                 console.log(response.data);
 
